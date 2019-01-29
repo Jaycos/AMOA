@@ -34,9 +34,13 @@ class Footer extends Component {
                 P: 204.786.7811
               </p>
               {this.hr()}
-              <p className="col-12 col-md-3">Connect with Uwinnipeg:</p>
+              <p className="col-12 col-md-3">Connect with Uwinnipeg: <br/>
+				<a href="https://www.uwinnipeg.ca/" className="text-secondary"> UWinnipeg Home </a>
+			  </p>
               {this.hr()}
-              <p className="col-12 col-md-3">One of three columns</p>
+              <p className="col-12 col-md-3">
+				<a href="../home" className="text-secondary"> AMOA Home </a>
+			  </p>
               {this.hr()}
               <p className="col-12 col-md-3" id="footerInfoLinks">
                 {this.state.links.map(link => (
