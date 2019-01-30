@@ -1,0 +1,185 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 19-Oct-2018, 9:12:05 PM
+    Author     : UW
+*/
+
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+/* Add a gray background color and some padding to the footer */
+footer {
+  background-color: #f2f2f2;
+  padding: 25px;
+}
+
+.carousel-inner img {
+  width: 100%; /* Set width to 100% */
+  margin: auto;
+  min-height:200px;
+}
+
+/* Hide the carousel text when the screen is less than 600 pixels wide */
+@media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+}
+.uwlogo {
+    max-height: 100% ;
+    max-width: 100% ;
+    object-fit: contain ;
+}
+/*****************/
+.mainContent {
+    margin-top: 10% ;
+    margin-left: auto ;
+    margin-right: auto ;
+    width: 75% ;
+    padding-top: 1% ;
+    padding-bottom: 1% ;
+    /*background-color: azure ; */
+    border-bottom: whitesmoke solid ;
+    display: block ;
+}
+.secondContent {
+    margin-top: 2% ;
+    margin-left: auto ;
+    margin-right: auto ;
+    width: 75% ;
+    padding-top: 1% ;
+    padding-bottom: 1% ;
+    /*background-color: azure ; */
+    border-bottom: whitesmoke solid ;
+    display: block ;
+}
+/******************/
+
+/**Coloured Squares/box*/
+.boximage {
+    width:100%; 
+    opacity: .9;
+}
+.centered {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.boxtextcentered {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-style: solid ;
+  padding: 2%;
+}
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.col-sm-4:hover .image {
+  opacity: 0.3;
+}
+
+.col-sm-4:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: dimgray;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+/*remove default bootstrap padding and then add whatever padding you want*/
+.padding-0{
+    padding: 3px ;
+}
+
+.boxicon{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25%;
+  height: 25%;
+}
+/****/
+
+/******Styles for Content Pages***********/
+
+.titleText{
+   font-size: 50px ;
+   font-family: arvo, times ;
+   font-weight: bold ;
+   
+}
+.subtitleText{
+   font-size: xx-large ;
+   font-family: arvo, times ;
+   font-style: italic ;
+   color: dimgrey ;
+}
+
+.dropCap {
+  color: #903;
+  float: left;
+  font-family: Georgia;
+  font-size: 75px;
+  line-height: 60px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+}
+.firstparagraph{
+    font-size: x-large ;
+}
+
+.bodyparagraph{
+    font-size: large ;
+}
+
+.quotetext{
+    color: rgb(238,42,55) ;
+    font-size: xx-large ;
+    font-family: georgia, serif ;
+    font-weight: bold ;
+}
+
+.marginzero{
+    margin: 0 ;
+}
+
+.hrforquote{
+    background-color: black ;
+    border: none ;
+    height: 2px ;
+    
+}
+
+/******end of styles for content pages***********/
