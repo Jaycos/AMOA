@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "./MyNavbar";
 import Footer from "./Footer";
+import '../webapp.css';
 
 class ModulePage extends Component {
   state = {
@@ -45,7 +46,7 @@ class ModulePage extends Component {
           <React.Fragment>
             <h3 className="text-left"> What is ACADECMIC MISCONDUCT?</h3>
             <p>
-              “Academic Misconduct” in student life is generally understood to
+              "Academic Misconduct" in student life is generally understood to
               occur when a student takes unfair advantage in order to secure
               better grades than he or she might otherwise earn. As a student
               you are responsible for behaving with integrity, which means you
@@ -63,8 +64,8 @@ class ModulePage extends Component {
               Winnipeg upholds are shared by other reputable institutes of
               higher learning. The specific policy and procedures governing
               Academic Misconduct at our institution are laid out in the
-              University Calendar, in section 8, in pages that cover “Student
-              Discipline” --pages 26-31. This information can be found online,
+              University Calendar, in section 8, in pages that cover "Student
+              Discipline" --pages 26-31. This information can be found online,
               <a href="https://www.uwinnipeg.ca/academics/calendar/docs/regulationsandpolicies.pdf">
                 in the policies and procedures section
               </a>
@@ -120,7 +121,97 @@ class ModulePage extends Component {
     else if (moduleName.toUpperCase() === "plagiarism".toUpperCase())
       return {
         title: "Plagiarism",
-        body: "plagiarism"
+        body: (
+          <React.Fragment>
+        <div className="col-lg-12 text-center">  
+
+        </div>
+        <br></br>
+        <div className="col-sm-6 col-sm-offset-3">
+
+            <br></br><br></br>
+
+            <p className="titleText">
+                An Introduction To Plagiarism For Students
+            </p>
+
+            <p className="subtitleText">
+                What is Plagiarism?
+            </p>
+        </div>
+        <div className="col-sm-6 col-sm-offset-3">
+            <br></br>
+
+            <p className="firstparagraph">
+                <span class="dropCap">I</span>
+                n student life, "Academic Misconduct" is generally understood to occur when a student takes unfair advantage in order to secure better grades than he or she might otherwise earn. 
+                As a student you are responsible for behaving with integrity, which means you neither take information from others without attribution or by unfair means, nor do you supply course information to others. 
+            </p>
+            <br></br>
+            <p className="bodyparagraph">
+                The University of Winnipeg treats cases of plagiarism, cheating, unwarranted collaboration, and other forms of academic dishonesty very seriously. Honesty and fairness are integral parts of the University's mission. 
+                Any member of the University community who violates these principles is dealt with as if he/she is damaging the reputation and accomplishments of the University itself.
+            </p>
+
+            <p className="bodyparagraph">
+                The standards regulating research conduct that the University of Winnipeg upholds are shared by other reputable institutes of higher learning. 
+                The specific policy and procedures governing Academic Misconduct at our institution are laid out in the University Calendar, in section 8, in pages that cover "Student Discipline" --pages 26-31. 
+                This information can be found online, in the <a href="https://www.uwinnipeg.ca/academics/calendar/docs/regulationsandpolicies.pdf" >policies and procedures</a> section:
+                The Calendar outlines various forms of misconduct as well as the steps that unfold when misconduct is said to have occurred and cases are adjudicated.
+            </p>
+        </div>
+        
+        <div className="col-sm-6 col-sm-offset-3">
+            <div className="col-sm-4">
+                <hr className="hrforquote"></hr>
+                <p className="quotetext">
+                    You also have rights as a student.
+                </p>
+                <hr className="hrforquote"></hr>
+            </div>
+            <div>
+            <p className="bodyparagraph">
+                To avoid misconduct situations, you are encouraged to read <a href="http://library.uwinnipeg.ca/help-with-research/index.html">useful Library pages</a> online that set out research and documentation procedures and resources:
+            </p>
+            <p className="bodyparagraph">
+                You also have rights as a student. The University of Winnipeg Student Association (UWSA) has prepared a document that not only describes misconduct events to avoid but also the steps you can take to find support if you are charged with a misconduct incident.
+            </p>
+            
+            </div>
+            <br></br>
+            <p className="titleText">What you will learn from this site:</p>
+            <div className="row">
+            <div className="col-sm-8">    
+            <p className="bodyparagraph">
+                In this introductory module, you will be presented with terms, definitions, proper practices, and links to sites where you can find more information and examples.
+            </p>
+            <p className="bodyparagraph">
+                In module two, you will learn more about the specific form of misconduct called plagiarism. This involves taking words and ideas of another and presenting them without attribution as if they were your own. This is misleading to readers. 
+                It also fails to give credit to the scholar who developed the content and to the source where the information appeared. On the other hand, when you document your sources correctly, you provide prospective readers with a link to topical material.
+            </p>
+            </div>
+            <div className="col-sm-4">
+                <hr className="hrforquote"></hr>
+                <p className="quotetext">
+                    "...fails to give credit to the scholar"
+                </p>
+                <hr className="hrforquote"></hr>
+            </div>
+            </div>    
+            <div >    
+            <p className="bodyparagraph">
+                To avoid plagiarism, you need to follow the guidelines of a research manual and system.
+            </p>
+            <p className="bodyparagraph">
+                Module three deals with avoiding cheating in test and exam situations. It also presents a view of unfair, and often uninvited collaborations
+            </p>
+            </div>
+
+
+            <br></br><br></br>
+        </div>
+          </React.Fragment>
+        )
       };
     else if (moduleName.toUpperCase() === "cheating".toUpperCase())
       return {
